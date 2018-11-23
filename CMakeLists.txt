@@ -93,10 +93,10 @@ add_subdirectory(dep)
 add_subdirectory(src)
 
 # documentation
-option ( LETKF_ENABLE_DOCS "Generate documentation")
-if(LETKF_ENABLE_DOCS)
-  add_subdirectory(doc)
-endif()
+#option ( LETKF_ENABLE_DOCS "Generate documentation")
+#if(LETKF_ENABLE_DOCS)
+#  add_subdirectory(doc)
+#endif()
 
 # tests
 if(LETKF_ENABLE_TESTS)
