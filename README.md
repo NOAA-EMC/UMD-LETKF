@@ -48,7 +48,7 @@ At minimum the following software is required (see the documentation of LETKF fo
 1. intel
 2. impi
 3. netcdf
-4. cmake/3.9.0`
+4. cmake/3.9.0
 5. Set the following variables:    
 `setenv FC mpiifort`    
 `setenv CC mpiicc`     
