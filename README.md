@@ -4,7 +4,7 @@
 
 For complete set of documentation, visit [umd-letkf.readthedocs.io](http://umd-letkf.readthedocs.io/).
 
-=======
+----------
 
 Brief Description
 ----------
@@ -23,7 +23,7 @@ It is built with the following design choices in mind:
 How to Build the LETKF Library on Theia
 ----------
 ## Clone LETKF
-0. Set the CLONE_DIR: The directory where the system is cloned, user defined path
+0. Set the CLONE_DIR: The directory where the system is cloned, user defined path    
    `set CLONE_DIR=USER/DEFINED/PATH`
 1. `git clone --recursive https://github.com/NOAA-EMC/UMD-LETKF.git $CLONE_DIR/letkf`
 2. `cd letkf`
@@ -32,10 +32,8 @@ How to Build the LETKF Library on Theia
 ## Compile the code
 0. `cd $CLONE_DIR/letkf`
 1. Setup the environment at the HPC that you work on. 
-This process is automated for HERA using intel 19, only:
-
-`source config/env.hera`
-
+This process is automated for HERA using intel 19, only:   
+   `source config/env.hera`
 2. `mkdir -p [...]/letkf/build`
 3. Building path TBD: `cd [...]/build`
 
@@ -51,9 +49,9 @@ At minimum the following software is required (see the documentation of LETKF fo
 2. impi
 3. netcdf
 4. cmake/3.9.0`
-5. Set the following variables:
-`setenv FC mpiifort`
-`setenv CC mpiicc`
-`setenv CXX mpiicpc`
+5. Set the following variables:    
+`setenv FC mpiifort`    
+`setenv CC mpiicc`     
+`setenv CXX mpiicpc` 
 
 
