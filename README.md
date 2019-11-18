@@ -20,7 +20,7 @@ It is built with the following design choices in mind:
 
 [2]: Miyoshi, T. (2005). Ensemble Kalman Filter Experiments with a Primitive-Equation Global Model. University of Maryland. Retrieved from [http://hdl.handle.net/1903/3046](http://hdl.handle.net/1903/3046)
 
-How to Build the LETKF Library on Theia
+How to Build the LETKF Library on Hera
 ----------
 ## Clone LETKF
 0. Set the CLONE_DIR: The directory where the system is cloned, user defined path    
