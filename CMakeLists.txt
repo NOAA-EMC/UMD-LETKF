@@ -68,7 +68,10 @@ set(NETCDF_F90 "YES")
 find_package(NetCDF REQUIRED)
 
 # LAPACK / BLAS
-find_package(LAPACK REQUIRED)
+# If Intel, assume the mkl library is used 
+#IF(NOT CMAKE_C_COMPILER_ID MATCHES Intel)
+  find_package(LAPACK REQUIRED)
+#ENDIF()
 
 # grib2
 option( LETKF_ENABLE_GRIB "enable grib2 support for state I/O" OFF)
