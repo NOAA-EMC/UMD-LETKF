@@ -24,17 +24,16 @@ How to Build the LETKF Library on Hera
 ----------
 ## Clone LETKF
 0. Set the CLONE_DIR: The directory where the system is cloned, user defined path    
-   `set CLONE_DIR=USER/DEFINED/PATH` or `export ...` 
-   `set MACHINE_ID=hera` or `export MACHINE_ID=orion`
+   `set CLONE_DIR=USER/DEFINED/PATH` or `export ...`  
+   `set MACHINE_ID=hera` or `export MACHINE_ID=orion` 
 1. `git clone --recursive https://github.com/NOAA-EMC/UMD-LETKF.git $CLONE_DIR/letkf`
-2. `cd letkf`
+2. `cd $ CLONE_DIR/letkf`
 3. `git submodule update --init --recursive` 
 
 ## Compile the code
-0. `cd $CLONE_DIR/letkf`
 1. Setup the environment at the HPC that you work on. 
 This process is automated for hera and orion using the default modules:   
-   `source config/env.${MACHINE_ID}`
+   `source /$CLONE_DIR/letkf/config/env.${MACHINE_ID}`
 2. `mkdir -p [...]/letkf/build`
 3. Building path TBD: `cd [...]/build`
 
